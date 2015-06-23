@@ -13,6 +13,7 @@ def save_current_brightness():
     b = get_brightness()
     with open('brightness.txt', 'w') as f:
         f.write(str(b))
+
 def get_last_brightness():
     t = None
     with open('brightness.txt', 'r') as f:
